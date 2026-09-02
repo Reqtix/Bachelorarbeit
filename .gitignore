@@ -1,0 +1,124 @@
+# ---------------- OS-Cruft ----------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---------------- Editor/IDE ----------------
+.vscode/
+.idea/
+*.code-workspace
+*.sw?
+*~
+*.tmp
+*.temp
+*.bak
+*.bak[0-9]*
+*.orig
+*.rej
+_latexindent_temp*/
+
+# ---------------- LaTeX: Aux/Logs/Build ----------------
+# Allgemein / latexmk
+*.aux
+*.auxlock
+*.log
+*.fls
+*.fdb_latexmk
+texput.log
+
+# Sync-Dateien
+*.pdfsync
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+
+# Ausgabeformate (PDF optional s.u.)
+*.dvi
+*.xdv
+*.ps
+# Falls du PDFs NICHT versionieren willst, auskommentiert lassen:
+# *.pdf
+
+# Inhaltsverzeichnisse/Listen
+*.toc
+*.lof
+*.lot
+*.out
+*.loa
+*.lol
+*.bbl-SAVE-ERROR
+
+# BibTeX / Biber
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*-blx.bib
+*.bib.bak
+
+# Index / Glossaries / Nomenclature
+*.idx
+*.ind
+*.ilg
+# Entferne die nächste Zeile, wenn du eine eigene .ist im Repo behalten willst:
+# *.ist
+*.glo
+*.gls
+*.glg
+*.glsdefs
+*.acn
+*.acr
+*.alg
+*.nlo
+*.nls
+*.nlg
+
+# Beamer
+*.nav
+*.snm
+*.vrb
+
+# TikZ/pgfplots Externalization (anpassen, falls eigener Pfad)
+*.dpth
+*.md5
+tikzexternal/
+pgfplots/**
+
+# minted / pygments
+_minted-*/
+*.pyg
+
+# pythontex / sagetex
+pythontex-files-*/
+*.pytxcode
+*.sagetex.sage
+*.sagetex.py
+*.sagetex.scmd
+*.sagetex.sout
+*.sagetex.gz
+
+# arara
+*.arx
+*.arara.log
+
+# knitr / Sweave (optional)
+*-concordance.tex
+*-eps-converted-to.pdf
+
+# Generische Build-/Cache-Verzeichnisse
+build/
+out/
+aux/
+auxdir/
+_output/
+cache/
+tmp/

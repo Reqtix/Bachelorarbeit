@@ -1,0 +1,72 @@
+\pdfoutput=1
+\documentclass[a4paper,12pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[backend=biber,style=apa]{biblatex}
+ 
+\usepackage{microtype} 
+\usepackage{graphicx}
+\usepackage{mathptmx} 
+\usepackage{setspace}
+\usepackage[left=3cm, right=2.5cm, top=3cm, bottom=3cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{acro}
+\acsetup{
+  first-style = long-short,        % Erste Nennung: Langform (Kurzform)
+  list/name  = {Abkürzungsverzeichnis},
+}
+\input{acronyms.tex}
+\usepackage[capitalise,noabbrev]{cleveref}
+\usepackage{caption}
+\usepackage{csquotes}
+\usepackage{float}
+\onehalfspacing % für 1.5-fachen Zeilenabstand
+\addbibresource{literatur.bib}  
+
+\setkomafont{section}{\bfseries}
+\setkomafont{subsection}{\bfseries}
+\setkomafont{subsubsection}{\bfseries}
+ 
+\begin{document}
+ 
+\begin{titlepage}
+    \centering
+    \vspace*{3cm}
+    \includegraphics[width=10cm]{pictures/OTH-Regensburg.png}
+ 
+    \begin{center}
+    {\LARGE \textbf{Bachelorarbeit}}\\[2cm]
+
+    {\Large Johannes Kübler}\\[0.5cm]
+    {\large MatrNr.: 3420061}\\[1cm]
+    {\large Studiengang: Wirtschaftsinformatik}\\[1cm]
+
+    {\large Bachelorarbeit}\\[2cm]
+    \end{center}
+
+    \vfill
+ 
+\end{titlepage}
+\thispagestyle{empty}
+ 
+\setcounter{tocdepth}{3}
+ 
+\clearpage 
+\pagenumbering{gobble}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagebreak
+
+% Abkürzungsverzeichnis
+\section*{Abkürzungsverzeichnis}
+\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
+\printacronyms[heading=none]
+\newpage
+\section{Einleitung}
+SAP BMW SCAN APP\pagebreak
+\section{Literaturverzeichnis}
+\printbibliography[title=""]
+\end{document}
